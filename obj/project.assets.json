@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\EjerciciosFicheros\\RepeticionExamenC\\RepeticionExamenC.csproj",
+      "projectUniqueName": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\Examen 3º Eva\\RepeticionExamenC\\RepeticionExamenC.csproj",
       "projectName": "RepeticionExamenC",
-      "projectPath": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\EjerciciosFicheros\\RepeticionExamenC\\RepeticionExamenC.csproj",
+      "projectPath": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\Examen 3º Eva\\RepeticionExamenC\\RepeticionExamenC.csproj",
       "packagesPath": "C:\\Users\\csi22-irodhan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\EjerciciosFicheros\\RepeticionExamenC\\obj\\",
+      "outputPath": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\Examen 3º Eva\\RepeticionExamenC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\csi22-irodhan\\AppData\\Roaming\\NuGet\\NuGet.Config",

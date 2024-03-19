@@ -12,3 +12,10 @@ C:\Users\csi22-irodhan\Desktop\Programacion\EjerciciosFicheros\RepeticionExamenC
 C:\Users\csi22-irodhan\Desktop\Programacion\EjerciciosFicheros\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.pdb
 C:\Users\csi22-irodhan\Desktop\Programacion\EjerciciosFicheros\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.genruntimeconfig.cache
 C:\Users\csi22-irodhan\Desktop\Programacion\EjerciciosFicheros\RepeticionExamenC\obj\Debug\net6.0\ref\RepeticionExamenC.dll
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.AssemblyInfoInputs.cache
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.AssemblyInfo.cs
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.csproj.CoreCompileInputs.cache
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.dll
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\refint\RepeticionExamenC.dll
+C:\Users\csi22-irodhan\Desktop\Programacion\Examen 3º Eva\RepeticionExamenC\obj\Debug\net6.0\RepeticionExamenC.pdb

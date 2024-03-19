@@ -16,7 +16,7 @@ namespace RepeticionExamenC.Dtos
         long idPedido;
         string nombreProducto = "aaaaa";
         int cantidadProducto = 0;
-        string fchEntrega="aaaaa";
+        string fchEntrega ="31-12-9999";
         //Constructores
         public ProductoDto(string nombreProducto, int cantidadProducto, string fchEntrega, long idPedido)
         {

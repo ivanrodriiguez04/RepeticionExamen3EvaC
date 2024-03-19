@@ -17,13 +17,13 @@ namespace RepeticionExamenC.Servicios
         /// Método que escribe en un fichero la informacion necesaria
         /// irodhan -> 05/03/2024
         /// </summary>
-        public void escribirFichero(List<ProductoDto> listaProductoAntigua);
+        public void crearFichero(List<VentasDto> listaVentas);
 
         /// <summary>
         /// Método que hace un nuevo pedido de productos al proveedor
         /// irodhan -> 05/03/2024
         /// </summary>
-        public void nuevoPedidoProveedor(List<ProductoDto> listaProductoAntigua);
+        public void nuevoPedidoProveedor();
 
     }
 }

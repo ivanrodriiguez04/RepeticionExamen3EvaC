@@ -13,18 +13,54 @@ namespace RepeticionExamenC.Servicios
     /// </summary>
     internal class OperacionalGerenciaImplementacion : OperacionalGerenciaInterfaz
     {
-        public void escribirFichero(List<ProductoDto> listaProductoAntigua)
+        public void crearFichero(List<VentasDto> listaVentas)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Fecha a consulta (dd-MM-yyyy): ");
+            string fechaConsultar=Console.ReadLine();
+            string contenidoFichero = crearContenido(listaVentas, fechaConsultar);
+
+            StreamWriter sw = new StreamWriter(fechaConsultar.Replace("-","")+".txt");
+            escribirFichero(sw, contenidoFichero);
+            sw.Close();
+        }
+        /// <summary>
+        /// Metodo que escribe el contenido dentro del fichero
+        /// irodhan -> 05/03/2024
+        /// </summary>
+        /// <param name="sw"></param>
+        /// <param name="contenido"></param>
+        private void escribirFichero(StreamWriter sw, string contenido) 
+        { 
+            sw.Write(contenido);
+        }
+        /// <summary>
+        /// Metodo que crea el contenido que se va a escribir en el fichero
+        /// irodhan -> 05/03/2024
+        /// </summary>
+        /// <param name="listaVentas"></param>
+        /// <param name="fechaConsulta"></param>
+        private string crearContenido(List<VentasDto> listaVentas,string fechaConsultar) 
+        {
+            string contenido = "";
+            foreach(VentasDto venta in listaVentas) 
+            { 
+                string fechaVenta=venta.FchInstanteVenta.ToString("dd-MM-yyyy");
+                if (fechaVenta.Equals(fechaConsultar)) 
+                { 
+                    contenido=contenido+venta.ToString();
+                }
+            }
+            return contenido;
         }
 
-        public void nuevoPedidoProveedor(List<ProductoDto> listaProductoAntigua)
+        public void nuevoPedidoProveedor()
         {
-            ProductoDto pedido= new ProductoDto();
-            string confirmacion;
+            List<ProductoDto> listaProducto = new List<ProductoDto>();
+            string confirmacion="";
             do 
             {
-                pedido.IdPedido = calcularId();
+                ProductoDto pedido = new ProductoDto();
+                pedido.IdPedido = calculoId(listaProducto);
                 Console.WriteLine("Introduzca el producto que necesita:");
                 pedido.NombreProducto = Console.ReadLine();
                 Console.WriteLine("Introduzca la cantidad que necesita:");
@@ -33,17 +69,27 @@ namespace RepeticionExamenC.Servicios
                 pedido.FchEntrega = Console.ReadLine();
                 Console.WriteLine("Desea hacer otro pedido:(si || no)");
                 confirmacion = Console.ReadLine();
-                listaProductoAntigua.Add(pedido);
+                listaProducto.Add(pedido);
             } while (confirmacion.Equals("si"));
-            //Recorremos la lista para mostrar todos los pedidos
-            foreach (ProductoDto pedidos in listaProductoAntigua)
+
+            foreach (ProductoDto pedidos in listaProducto) 
             {
-                for (int i=0;i<listaProductoAntigua.Count;i++) 
-                { 
-                    if(pedido.)
-                }
                 Console.WriteLine(pedidos.ToString());
             }
+        }
+        private long calculoId(List<ProductoDto> listaProducto)
+        {
+            long nuevoId;
+            int tamañoLista = listaProducto.Count;
+            if (tamañoLista > 0)
+            {
+                nuevoId = listaProducto[tamañoLista - 1].IdPedido + 1;
+            }
+            else
+            {
+                nuevoId = 1;
+            }
+            return nuevoId;
         }
     }
 }

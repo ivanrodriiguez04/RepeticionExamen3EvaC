@@ -14,26 +14,24 @@ namespace RepeticionExamenC.Dtos
     {
         //Atributos
         long idVenta;
-        int dineroVenta = 0;
-        DateTime fchVenta = DateTime.Now;
-        
-        //Constructores
-        public VentasDto(long idVenta, int dineroVenta, DateTime fchVenta)
-        {
-            this.idVenta = idVenta;
-            this.dineroVenta = dineroVenta;
-            this.fchVenta = fchVenta;
-        }
-        public VentasDto() 
-        { 
-        
-        }
+        double importeVenta = 0;
+        DateTime fchInstanteVenta = DateTime.Now;
 
         //Getters & Setters
         public long IdVenta { get => idVenta; set => idVenta = value; }
-        public int DineroVenta { get => dineroVenta; set => dineroVenta = value; }
-        public DateTime FchVenta { get => fchVenta; set => fchVenta = value; }
-
+        public double ImporteVenta { get => importeVenta; set => importeVenta = value; }
+        public DateTime FchInstanteVenta { get => FchInstanteVenta; set => FchInstanteVenta = value; }
+        
+        //ToString 
+        public string ToString() 
+        {
+            string concatenacion = ".........." +
+                "\nVenta número: " + this.idVenta +
+                "\nEuros: " + this.importeVenta +
+                "\nInstante de compra: " + this.fchInstanteVenta +
+                "\n.........."+"\n";
+            return concatenacion;
+        }
 
     }
 }

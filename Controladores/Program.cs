@@ -15,10 +15,7 @@ namespace RepeticionExamenC.Controladores
         static MenuInterfaz mI=new MenuImplementacion();
         static OperacionalEmpleadosInterfaz oE = new OperacionalEmpleadosImplementacion();
         static OperacionalGerenciaInterfaz oG = new OperacionalGerenciaImplementacion();
-        //Ruta del fichero
-        
         //Listas
-        static List<ProductoDto> listaProducto = new List<ProductoDto>();
         static List<VentasDto> listaVentas = new List<VentasDto>();
 
         /// <summary>
@@ -76,11 +73,11 @@ namespace RepeticionExamenC.Controladores
                     break;
                 case 1:
                     Console.WriteLine("[INFO] - Ha seleccionado la opcion 1");
-                    oG.escribirFichero(listaProducto);
+                    oG.crearFichero(listaVentas);
                     break;
                 case 2:
                     Console.WriteLine("[INFO] - Ha seleccionado la opcion 2");
-                    oG.nuevoPedidoProveedor(listaProducto);
+                    oG.nuevoPedidoProveedor();
                     break;
                 default:
                     Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna opcion mostrada anteriormente");
@@ -105,9 +102,11 @@ namespace RepeticionExamenC.Controladores
                     break;
                 case 1:
                     Console.WriteLine("[INFO] - Ha seleccionado la opcion 1");
+                    oE.anadirVentas(listaVentas);
                     break;
                 case 2:
                     Console.WriteLine("[INFO] - Ha seleccionado la opcion 2");
+                    oE.calculoTotalVentas(listaVentas);
                     break;
                 default:
                     Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna opcion mostrada anteriormente");
